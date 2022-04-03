@@ -1,0 +1,27 @@
+{
+  "name": "toolsjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skyleen77/toolsjs.git"
+  },
+  "keywords": [
+    "javascript",
+    "tool",
+    "tools"
+  ],
+  "author": "Elliot Sutton alias Skyleen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skyleen77/toolsjs/issues"
+  },
+  "homepage": "https://github.com/Skyleen77/toolsjs#readme",
+  "devDependencies": {
+    "eslint": "^8.12.0"
+  }
+}
