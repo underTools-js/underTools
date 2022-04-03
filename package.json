@@ -2,7 +2,9 @@
   "name": "toolsjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/tools.cjs.js",
+  "module": "dist/tools.esm.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -52,5 +54,8 @@
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }

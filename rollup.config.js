@@ -13,20 +13,12 @@ export default {
     {
       file: `${dist}/${bundle}.cjs.js`,
       format: 'cjs',
-    },
-    {
-      file: `${dist}/${bundle}.cjs.min.js`,
-      format: 'cjs',
       plugins: [
         prod && terser(),
       ],
     },
     {
       file: `${dist}/${bundle}.esm.js`,
-      format: 'esm',
-    },
-    {
-      file: `${dist}/${bundle}.esm.min.js`,
       format: 'esm',
       plugins: [
         prod && terser(),
@@ -35,11 +27,6 @@ export default {
     {
       name: 'Tools',
       file: `${dist}/${bundle}.js`,
-      format: 'umd',
-    },
-    {
-      name: 'Tools',
-      file: `${dist}/${bundle}.min.js`,
       format: 'umd',
       plugins: [
         prod && terser(),
