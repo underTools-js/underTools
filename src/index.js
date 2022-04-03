@@ -1,1 +1,3 @@
-console.log('hello my friend');
+const func = () => {};
+
+export default func;
