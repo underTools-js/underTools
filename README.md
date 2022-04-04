@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="#">
+    <img src="https://elliot-sutton.com/src/img/tools.png" alt="Tools.js Logo" width="180">
+  </a>
+</p>
+
 <h3 align="center">Tools.js</h3>
 
 <p align="center">
@@ -67,13 +73,13 @@ Tools.randArray(array);
 
 #### CDN
 
-##### HTML
+1. HTML
 
 ```html
 <script src="cdn/tools.js"></script>
 ```
 
-##### CSS
+2. CSS
 
 ```js
 const { randArray } = Tools;
