@@ -12,6 +12,8 @@
   It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.
 </p>
 
+<br>
+
 ## Table of contents
 
 - [Start](#start)
