@@ -1,10 +1,12 @@
+<h1 align="center">Tools.js</h1>
+
+<br>
+
 <p align="center">
   <a href="#">
-    <img src="https://elliot-sutton.com/src/img/tools.png" alt="Tools.js Logo" width="180">
+    <img src="https://elliot-sutton.com/src/img/tools.png" alt="Tools.js Logo" width="160">
   </a>
 </p>
-
-<h3 align="center">Tools.js</h3>
 
 <p align="center">
   <strong>Tools.js</strong> is a light, fast, and complete <strong>Javascript library</strong>.
