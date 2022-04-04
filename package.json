@@ -1,7 +1,7 @@
 {
   "name": "toolsjs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tools.js is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.",
   "main": "dist/tools.cjs.js",
   "module": "dist/tools.esm.js",
   "sideEffects": false,
