@@ -1,4 +1,4 @@
-import { randArray } from 'toolsjs';
+import { randArray } from 'atools.js';
 
 // const root = document.querySelector('root');
 

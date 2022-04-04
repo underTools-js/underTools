@@ -1,10 +1,13 @@
 {
-  "name": "toolsjs",
+  "name": "atools.js",
   "version": "1.0.0",
-  "description": "Tools.js is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.",
-  "main": "dist/tools.cjs.js",
-  "module": "dist/tools.esm.js",
+  "description": "aTools.js is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.",
+  "main": "dist/atools.cjs.js",
+  "module": "dist/atools.esm.js",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -13,7 +16,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test:staged": "jest --findRelatedTests"
+    "test:staged": "jest --findRelatedTests",
+    "prepublishOnly": "npm run build"
   },
   "husky": {
     "hooks": {
@@ -29,19 +33,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Skyleen77/toolsjs.git"
+    "url": "git+https://github.com/Skyleen77/aTools.js.git"
   },
   "keywords": [
     "javascript",
     "tool",
-    "tools"
+    "tools",
+    "atools"
   ],
   "author": "Elliot Sutton a.k.a Skyleen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Skyleen77/toolsjs/issues"
+    "url": "https://github.com/Skyleen77/aTools.js/issues"
   },
-  "homepage": "https://github.com/Skyleen77/toolsjs#readme",
+  "homepage": "https://github.com/Skyleen77/aTools.js#readme",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",

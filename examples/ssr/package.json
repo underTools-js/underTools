@@ -7,6 +7,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "toolsjs": "file:../.."
+    "atools.js": "file:../.."
   }
 }

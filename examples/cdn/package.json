@@ -7,10 +7,10 @@
   "scripts": {
     "serve": "serve"
   },
-  "dependencies": {
-    "toolsjs": "file:../.."
-  },
   "devDependencies": {
     "serve": "^13.0.2"
+  },
+  "dependencies": {
+    "atools.js": "file:../.."
   }
 }

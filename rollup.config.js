@@ -3,7 +3,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 
 const dist = 'dist';
-const bundle = 'tools';
+const bundle = 'atools';
 
 const prod = !process.env.ROLLUP_WATCH;
 
@@ -25,7 +25,7 @@ export default {
       ],
     },
     {
-      name: 'Tools',
+      name: 'aTools',
       file: `${dist}/${bundle}.js`,
       format: 'umd',
       plugins: [
