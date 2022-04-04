@@ -1,9 +1,9 @@
 <h3 align="center">Tools.js</h3>
 
 <p align="center">
-  **Tools.js** is a light, fast, and complete **Javascript library**.
+  <strong>Tools.js</strong> is a light, fast, and complete <strong>Javascript library</strong>.
   <br>
-  It facilitates the manipulation of the **DOM**, the **events**, the **API calls** and adds interesting **functions**, not present in the **native JavaScript**.
+  It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.
 </p>
 
 ## Table of contents
@@ -13,29 +13,29 @@
 
 ## Start
 
-1. Include
+### 1. Include
 
-### NPM
+#### NPM
 
 ```sh
 npm install toolsjs
 ```
 
-### YARN
+#### YARN
 
 ```sh
 yarn add toolsjs
 ```
 
-### CDN
+#### CDN
 
 ```sh
 soon...
 ```
 
-2. Use
+### 2. Use
 
-### SSR
+#### SSR
 
 ```js
 // Recommended
@@ -50,7 +50,7 @@ const Tools = require("toolsjs");
 Tools.randArray(array);
 ```
 
-### CSR
+#### CSR
 
 ```js
 // Recommended
@@ -65,15 +65,15 @@ import Tools from "toolsjs";
 Tools.randArray(array);
 ```
 
-### CDN
+#### CDN
 
-#### HTML
+##### HTML
 
 ```html
 <script src="cdn/tools.js"></script>
 ```
 
-#### CSS
+##### CSS
 
 ```js
 const { randArray } = Tools;
