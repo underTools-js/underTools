@@ -12,7 +12,8 @@
     "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "test:staged": "jest --findRelatedTests"
   },
   "husky": {
     "hooks": {
@@ -22,6 +23,7 @@
   "lint-staged": {
     "*.js": [
       "npm run lint:fix",
+      "npm run test:staged",
       "git add"
     ]
   },
