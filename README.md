@@ -11,7 +11,7 @@
 <p align="center">
   <strong>aTool.js</strong> is a light, fast, and complete <strong>Javascript library</strong>.
   <br>
-  It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.
+  It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript.
 </p>
 
 <br>
