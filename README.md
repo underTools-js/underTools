@@ -39,8 +39,8 @@ yarn add atool.js
 
 #### CDN
 
-```sh
-soon...
+```html
+<script src="https://unpkg.com/atool.js@1.0.0/dist/atool.js"></script>
 ```
 
 ### 2. Use
@@ -76,14 +76,6 @@ aTool.randArray(array);
 ```
 
 #### CDN
-
-1. HTML
-
-```html
-<script src="cdn/atool.js"></script>
-```
-
-2. CSS
 
 ```js
 const { randArray } = aTool;
