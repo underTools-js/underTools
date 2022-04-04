@@ -11,6 +11,6 @@
     "serve": "^13.0.2"
   },
   "dependencies": {
-    "atools.js": "file:../.."
+    "atool.js": "file:../.."
   }
 }

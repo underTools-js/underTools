@@ -1,15 +1,15 @@
-<h1 align="center">aTools.js</h1>
+<h1 align="center">aTool.js</h1>
 
 <br>
 
 <p align="center">
   <a href="#">
-    <img src="https://elliot-sutton.com/src/img/atools.js.png" alt="aTools.js Logo" width="160">
+    <img src="https://elliot-sutton.com/src/img/atool.js.png" alt="aTool.js Logo" width="160">
   </a>
 </p>
 
 <p align="center">
-  <strong>aTools.js</strong> is a light, fast, and complete <strong>Javascript library</strong>.
+  <strong>aTool.js</strong> is a light, fast, and complete <strong>Javascript library</strong>.
   <br>
   It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.
 </p>
@@ -28,13 +28,13 @@
 #### NPM
 
 ```sh
-npm install atools.js
+npm install atool.js
 ```
 
 #### YARN
 
 ```sh
-yarn add atools.js
+yarn add atool.js
 ```
 
 #### CDN
@@ -49,30 +49,30 @@ soon...
 
 ```js
 // Recommended
-const { randArray } = require("atools.js");
+const { randArray } = require("atool.js");
 randArray(array);
 ```
 
 or
 
 ```js
-const aTools = require("atools.js");
-aTools.randArray(array);
+const aTool = require("atool.js");
+aTool.randArray(array);
 ```
 
 #### CSR
 
 ```js
 // Recommended
-import { randArray } from "atools.js";
+import { randArray } from "atool.js";
 randArray(array);
 ```
 
 or
 
 ```js
-import aTools from "atools.js";
-aTools.randArray(array);
+import aTool from "atool.js";
+aTool.randArray(array);
 ```
 
 #### CDN
@@ -80,20 +80,20 @@ aTools.randArray(array);
 1. HTML
 
 ```html
-<script src="cdn/atools.js"></script>
+<script src="cdn/atool.js"></script>
 ```
 
 2. CSS
 
 ```js
-const { randArray } = aTools;
+const { randArray } = aTool;
 randArray(array);
 ```
 
 or
 
 ```js
-aTools.randArray(array);
+aTool.randArray(array);
 ```
 
 ## Functions

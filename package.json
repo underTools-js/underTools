@@ -1,9 +1,9 @@
 {
-  "name": "atools.js",
+  "name": "atool.js",
   "version": "1.0.0",
-  "description": "aTools.js is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.",
-  "main": "dist/atools.cjs.js",
-  "module": "dist/atools.esm.js",
+  "description": "aTool.js is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.",
+  "main": "dist/atool.cjs.js",
+  "module": "dist/atool.esm.js",
   "sideEffects": false,
   "files": [
     "dist"
@@ -33,20 +33,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Skyleen77/aTools.js.git"
+    "url": "git+https://github.com/Skyleen77/aTool.js.git"
   },
   "keywords": [
     "javascript",
     "tool",
     "tools",
-    "atools"
+    "atool"
   ],
   "author": "Elliot Sutton a.k.a Skyleen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Skyleen77/aTools.js/issues"
+    "url": "https://github.com/Skyleen77/aTool.js/issues"
   },
-  "homepage": "https://github.com/Skyleen77/aTools.js#readme",
+  "homepage": "https://github.com/Skyleen77/aTool.js#readme",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
