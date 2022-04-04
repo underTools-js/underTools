@@ -1,15 +1,15 @@
-<h1 align="center">aTool.js</h1>
+<h1 align="center">underTools</h1>
 
 <br>
 
 <p align="center">
   <a href="#">
-    <img src="https://elliot-sutton.com/src/img/atool.js.png" alt="aTool.js Logo" width="160">
+    <img src="https://elliot-sutton.com/src/img/undertools.js.png" alt="underTools Logo" width="160">
   </a>
 </p>
 
 <p align="center">
-  <strong>aTool.js</strong> is a light, fast, and complete <strong>Javascript library</strong>.
+  <strong>underTools</strong> is a light, fast, and complete <strong>Javascript library</strong>.
   <br>
   It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript.
 </p>
@@ -28,19 +28,19 @@
 #### NPM
 
 ```sh
-npm install atool.js
+npm install undertools
 ```
 
 #### YARN
 
 ```sh
-yarn add atool.js
+yarn add undertools
 ```
 
 #### CDN
 
 ```html
-<script src="https://unpkg.com/atool.js@1.0.1/dist/atool.js"></script>
+<script src="https://unpkg.com/undertools@1.0.1/dist/undertools.js"></script>
 ```
 
 ### 2. Use
@@ -49,43 +49,43 @@ yarn add atool.js
 
 ```js
 // Recommended
-const { randArray } = require("atool.js");
+const { randArray } = require("undertools");
 randArray(array);
 ```
 
 or
 
 ```js
-const aTool = require("atool.js");
-aTool.randArray(array);
+const underTools = require("undertools");
+underTools.randArray(array);
 ```
 
 #### CSR
 
 ```js
 // Recommended
-import { randArray } from "atool.js";
+import { randArray } from "undertools";
 randArray(array);
 ```
 
 or
 
 ```js
-import aTool from "atool.js";
-aTool.randArray(array);
+import underTools from "undertools";
+underTools.randArray(array);
 ```
 
 #### CDN
 
 ```js
-const { randArray } = aTool;
+const { randArray } = underTools;
 randArray(array);
 ```
 
 or
 
 ```js
-aTool.randArray(array);
+underTools.randArray(array);
 ```
 
 ## Functions
