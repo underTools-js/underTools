@@ -40,7 +40,7 @@ yarn add undertools
 #### CDN
 
 ```html
-<script src="https://unpkg.com/undertools@1.0.1/dist/undertools.js"></script>
+<script src="https://unpkg.com/undertools@1.0.3/dist/undertools.js"></script>
 ```
 
 ### 2. Use
