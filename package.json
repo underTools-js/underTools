@@ -1,6 +1,6 @@
 {
   "name": "atool.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "aTool.js is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native JavaScript.",
   "main": "dist/atool.cjs.js",
   "module": "dist/atool.esm.js",

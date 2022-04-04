@@ -40,7 +40,7 @@ yarn add atool.js
 #### CDN
 
 ```html
-<script src="https://unpkg.com/atool.js@1.0.0/dist/atool.js"></script>
+<script src="https://unpkg.com/atool.js@1.0.1/dist/atool.js"></script>
 ```
 
 ### 2. Use
