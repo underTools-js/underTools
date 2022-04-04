@@ -1,0 +1,16 @@
+{
+  "name": "cdn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "serve": "serve"
+  },
+  "dependencies": {
+    "toolsjs": "file:../.."
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
+  }
+}
