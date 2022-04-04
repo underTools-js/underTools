@@ -9,7 +9,10 @@
     "prebuild": "rimraf dist",
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
-    "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote"
+    "lint:fix": "prettier --write $PWD/'src/**/*.js' --single-quote",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "husky": {
     "hooks": {
@@ -42,10 +45,14 @@
     "@babel/preset-env": "^7.16.11",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.4",
     "eslint": "^8.12.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.3",
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "lint-staged": "^12.3.7",
     "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "^5.0.1",

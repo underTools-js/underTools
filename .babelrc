@@ -10,5 +10,12 @@
         }
       }
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/env"
+      ]
+    }
+  }
 }
