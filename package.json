@@ -28,12 +28,13 @@
     "*.js": [
       "npm run lint:fix",
       "npm run test:staged",
+      "npm run build",
       "git add"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Skyleen77/underTools.js.git"
+    "url": "git+https://github.com/Skyleen77/underTools.git"
   },
   "keywords": [
     "javascript",
@@ -45,9 +46,9 @@
   "author": "Elliot Sutton a.k.a Skyleen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Skyleen77/underTools.js/issues"
+    "url": "https://github.com/Skyleen77/underTools/issues"
   },
-  "homepage": "https://github.com/Skyleen77/underTools.js#readme",
+  "homepage": "https://github.com/Skyleen77/underTools#readme",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",

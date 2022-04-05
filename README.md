@@ -28,14 +28,14 @@
 
 #### NPM
 
-```sh
-npm install undertools
+```bash
+$ npm i undertools
 ```
 
 #### YARN
 
-```sh
-yarn add undertools
+```bash
+$ yarn add undertools
 ```
 
 #### CDN
