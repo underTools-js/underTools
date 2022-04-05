@@ -3,3 +3,7 @@ coverage
 dist
 
 node_modules
+
+examples
+
+*.config.js

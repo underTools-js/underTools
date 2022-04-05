@@ -20,6 +20,7 @@
 
 - [Start](#start)
 - [Functions](#functions)
+- [DOM](#dom)
 
 ## Start
 
@@ -98,3 +99,64 @@ randArray(array);
 ```
 
 In this example the `randArray()` function will return one of the elements of the array either 1, 2, 3, 4 or 5.
+
+## DOM
+
+The `_()` function allows you to work with dom elements.
+
+### Use
+
+```js
+_(element, action).method(agrs...);
+```
+
+**element**: The HTML element(s) targeted or you want to target or create based on the `action`.
+
+**action**:
+
+- `undefined`: select the element(s)
+
+_Facultatif_
+
+- `create`: create the element
+
+**method**:
+
+- `undefined`: get the object containing all the properties and methods of the element(s)
+- `dom()`: get the element(s)
+  - `dom(element)`: replace element(s)
+
+_Facultatif_
+
+- `style()`: get all the element(s) style(s)
+  - `style(property)` or `style().property`: get the value of the property entered as parameter of the element(s)\
+    _The property is written as in Javascript for `style().property` (example `style().backgroundColor`) and as in CSS for `style(property)` (example `style('background-color')`)._
+  - `style(property, value)`: set to the element(s) the value to the property entered as parameter
+- `text()`: get the text content of the element(s)
+  - `text(content)`: set the content entered as a parameter for the element(s)
+- `on(event, callback)`: set an event to the element(s) like `element.addEventListener(event, callback)`
+- `click()`: click on the element(s)
+- `hide()`: set display none to the element(s)
+- `display()`: set display block to the element(s)
+- `attr(name)`: get the value of the attribute entered as a parameter
+  - `attr(name, value)`: set the attribute and its value entered in parameters
+- `haveClass(name)`: return true if the element contains the class entered as parameter or false if it does not
+- `addClass(name)`: set the class entered as a parameter to the element(s)
+- `removeClass(name)`: remove the class entered as a parameter to the element(s)
+- `toggleClass(name)`: toggle the class entered as a parameter to the element(s)
+- `add(element)`: add an element in the element(s)
+
+### Examples
+
+```js
+// Select element in the dom
+_("#root").dom();
+// Create an element
+_("create", "h1").text("Hello world");
+// Modify an element in the dom by another element
+_("#root").dom(_("h1", "create").text("Hello world"));
+
+// or
+const h1 = _("h1").dom();
+_(h1).attr("id", "test");
+```
