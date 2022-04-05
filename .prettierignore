@@ -4,4 +4,10 @@ dist
 
 node_modules
 
+examples
+
+*.config.js
+
 *.html
+
+README.md
