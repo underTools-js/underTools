@@ -12,6 +12,10 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-console": "off"
+        "no-console": "off",
+        "no-restricted-syntax": "off",
+        "no-shadow": "off",
+        "no-param-reassign": "off",
+        "no-bitwise": "off"
     }
 }

@@ -50,8 +50,8 @@ $ yarn add undertools
 
 ```js
 // Recommended
-const { randArray } = require("undertools");
-randArray(array);
+const _ = require("undertools");
+_.randArray(array);
 ```
 
 or
@@ -65,8 +65,8 @@ underTools.randArray(array);
 
 ```js
 // Recommended
-import { randArray } from "undertools";
-randArray(array);
+import _ from "undertools";
+_.randArray(array);
 ```
 
 or
@@ -79,8 +79,8 @@ underTools.randArray(array);
 #### CDN
 
 ```js
-const { randArray } = underTools;
-randArray(array);
+const _ = underTools;
+_.randArray(array);
 ```
 
 or
@@ -95,7 +95,7 @@ The `randArray()` function selects an element randomly from an array.
 
 ```js
 const array = [1, 2, 3, 4, 5];
-randArray(array);
+_.randArray(array);
 ```
 
 In this example the `randArray()` function will return one of the elements of the array either 1, 2, 3, 4 or 5.
@@ -152,7 +152,7 @@ _Facultatif_
 // Select element in the dom
 _("#root").dom();
 // Create an element
-_("create", "h1").text("Hello world");
+_("h1", "create").text("Hello world");
 // Modify an element in the dom by another element
 _("#root").dom(_("h1", "create").text("Hello world"));
 
