@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import _ from '../../index.js';
 
-describe('Rand array test', () => {
+describe('Rand test', () => {
   it('should be return random element in the array', () => {
     let alertItem = false;
     const array = [1, 2, 3, 4, 5];
