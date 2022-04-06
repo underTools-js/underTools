@@ -80,6 +80,10 @@ There are some other scripts available in the `scripts` section of the `package.
 
 - **`src`**:
 
-  - **`functions`**: contains the source code of each function as well as their tests.
+  - **`method`**: contains all the methods of the undertools (`_`) library.
 
-  - **`index.js`**: contains the export of all functions
+  - **`selector`**: contains all the methods of the `_()` selector.
+
+  - **`test`**: contains all tests.
+
+  - **`index.js`**: contains the export of all functions.
