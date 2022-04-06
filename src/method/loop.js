@@ -1,3 +1,4 @@
+/* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable import/no-cycle */
 /* eslint-disable jest/valid-title */
 /* eslint-disable jest/expect-expect */
@@ -6,6 +7,9 @@
 /* eslint-disable import/extensions */
 import _ from '../index.js';
 
-export const map = (arr, func = _.id) => [...arr].map((value) => func(value));
-export const each = (arr, func = _.id) => [...arr].forEach((value) => func(value));
-export const filter = (arr, test = () => true) => [...arr].filter((value) => test(value));
+export const map = (arr, callback = _.id) =>
+  [...arr].map((value) => callback(value));
+export const each = (arr, callback = _.id) =>
+  [...arr].forEach((value) => callback(value));
+export const filter = (arr, test = () => true) =>
+  [...arr].filter((value) => test(value));

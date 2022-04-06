@@ -19,7 +19,7 @@
 ## Table of contents
 
 - [Start](#start)
-- [Functions](#functions)
+- [Methods](#functions)
 - [DOM](#dom)
 
 ## Start
@@ -41,7 +41,7 @@ $ yarn add undertools
 #### CDN
 
 ```html
-<script src="https://unpkg.com/undertools@1.1.0/dist/undertools.js"></script>
+<script src="https://unpkg.com/undertools@1.2.0/dist/undertools.js"></script>
 ```
 
 ### 2. Use
@@ -89,7 +89,7 @@ or
 underTools.randArray(array);
 ```
 
-## Functions
+## Methods
 
 The `randArray()` function selects an element randomly from an array.
 
@@ -99,6 +99,33 @@ _.randArray(array);
 ```
 
 In this example the `randArray()` function will return one of the elements of the array either 1, 2, 3, 4 or 5.
+
+Other methods :
+
+- `_.id(x)`: Returns the value as a parameter.
+- `_.double(x)`: Returns the double of the value in parameter.
+  - `x`: Number
+- `_.map(arr, callback)`: Allows you to use Javascript's map function with a string or an array.
+  - `arr`: String | Array
+  - `callback`: Function
+- `_.forEach(arr, callback)` or `_.each(arr, callback)`: Allows you to use the Javascript forEach function with a character string or an array with the name forEach or each.
+  - `arr`: String | Array
+  - `callback`: Function
+- `_.filter(arr, test)`: Allows you to use the JavaScript filter function with a character string or an array.
+  - `arr`: String | Array
+  - `test`: Function
+- `_.uniq(arr)`: Returns unique characters from a string or unique elements from an array.
+  - `arr`: String | Array
+- `_.join(arr, separator)`: Creates and returns a new character string by concatenating, with separator if is entered as a parameter, all the elements of an array or all the characters of a character string.
+  - `arr`: String | Array
+  - `separator`: String (initially '')
+- `_.inter(arr, ...array)`: Returns an array containing the common characters of character strings or the common elements of arrays passed as parameters
+  - `arr`, `...array`: String | Array
+- `_.scale(arr, min, max, int)`: 
+  - `arr`: Array[Number]
+  - `min`: Number (initially 0)
+  - `max`: Number (initially 1)
+  - `int`: Boolean (initially true)
 
 ## DOM
 
