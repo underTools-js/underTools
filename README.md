@@ -127,7 +127,7 @@ Other methods :
   - `max`: Number (initially 1)
   - `int`: Boolean (initially true)
 
-## DOM
+## Selector
 
 The `_()` function allows you to work with dom elements.
 
