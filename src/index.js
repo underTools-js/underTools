@@ -165,7 +165,7 @@ _.id = (x) => id(x);
  * @param { (String | Array) } arr
  * @param { Function } func
  */
-_.map = (arr, func) => map(arr, func);
+_.map = (arr, callback) => map(arr, callback);
 
 /*
  * Allows you to use the Javascript forEach function with a
@@ -174,7 +174,7 @@ _.map = (arr, func) => map(arr, func);
  * @param { (String | Array) } arr
  * @param { Function } func
  */
-_.forEach = _.each = (arr, func) => each(arr, func);
+_.forEach = _.each = (arr, callback) => each(arr, callback);
 
 /*
  * Allows you to use the JavaScript filter function with a
@@ -211,22 +211,22 @@ _.uniq = (arr) => uniq(arr);
 _.join = (arr, separator) => join(arr, separator);
 
 /*
-* Returns an array containing the common characters of character
-* strings or the common elements of arrays passed as parameters
-*
-* @param { (String | Array) } arr, ...array
-*/
+ * Returns an array containing the common characters of character
+ * strings or the common elements of arrays passed as parameters
+ *
+ * @param { (String | Array) } arr, ...array
+ */
 _.inter = (arr, ...array) => inter(arr, ...array);
 
 /*
-* Returns an array containing the common characters of character
-* strings or the common elements of arrays passed as parameters
-*
-* @param { Array[Number] } arr
-* @param { Number } min
-* @param { Number } max
-* @param { Boolean } int
-*/
+ * Returns an array containing the common characters of character
+ * strings or the common elements of arrays passed as parameters
+ *
+ * @param { Array[Number] } arr
+ * @param { Number } min
+ * @param { Number } max
+ * @param { Boolean } int
+ */
 _.scale = (arr, min, max, int) => scale(arr, min, max, int);
 
 export default _;
