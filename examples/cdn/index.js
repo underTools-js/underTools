@@ -28,3 +28,23 @@ console.log(_.inter([1, 2, 1, 2, 1, 2]));
 
 console.log(_.scale([3, 7, 12, 8, 1], 0, 20));
 console.log(_.scale([3, 7, 12, 8, 1], 0, 20, false));
+
+_.ajax({
+  method: 'GET',
+  url: 'https://api.thecatapi.com/v1/images/search',
+  response: (res) => {
+    console.log(res);
+  },
+  error: (err) => {
+    console.log(err);
+  },
+});
+
+console.log(_.type(true));
+console.log(_.type(3));
+console.log(_.type(3.33));
+console.log(_.type('string'));
+console.log(_.type([1, 2, 3]));
+console.log(_.type({ name: 'John' }));
+
+console.log(_.rand(0, 10));

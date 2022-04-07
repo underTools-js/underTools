@@ -5,4 +5,4 @@ export const randArray = (arr) => {
   return rValue;
 };
 
-export default randArray;
+export const rand = (min, max) => Math.round(Math.random() * (max - min) + min);

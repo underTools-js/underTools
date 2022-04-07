@@ -27,3 +27,12 @@ console.log(_.inter([1, 2, 1, 2, 1, 2]));
 
 console.log(_.scale([3, 7, 12, 8, 1], 0, 20));
 console.log(_.scale([3, 7, 12, 8, 1], 0, 20, false));
+
+console.log(_.type(true));
+console.log(_.type(3));
+console.log(_.type(3.33));
+console.log(_.type('string'));
+console.log(_.type([1, 2, 3]));
+console.log(_.type({ name: 'John' }));
+
+console.log(_.rand(0, 10));

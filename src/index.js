@@ -19,11 +19,13 @@ import add from './selector/dom/add.js';
 import remove from './selector/dom/remove.js';
 import { double, id } from './method/base.js';
 import { each, filter, map } from './method/loop.js';
-import randArray from './method/rand.js';
+import { randArray, rand } from './method/rand.js';
 import uniq from './method/uniq.js';
 import join from './method/join.js';
 import inter from './method/inter.js';
 import scale from './method/scale.js';
+import ajax from './method/ajax.js';
+import type from './method/type.js';
 
 const _ = (element, action) => {
   const self = {
@@ -228,5 +230,38 @@ _.inter = (arr, ...array) => inter(arr, ...array);
  * @param { Boolean } int
  */
 _.scale = (arr, min, max, int) => scale(arr, min, max, int);
+
+/*
+ * returns the result of an AJAX request by choosing the fetch or
+ * XMLHttpRequest method depending on browser compatibility, if the
+ * obj.request parameter is not specified
+ *
+ * @param { Object } obj
+ * @param { String } obj.request
+ * @param { String } obj.method
+ * @param { String } obj.url
+ * @param { Function } obj.response
+ * @param { String } obj.data
+ * @param { String } obj.format
+ * @param { Object } obj.headers
+ * @param { String } obj.mode
+ * @param { String } obj.cache
+ */
+_.ajax = (obj) => ajax(obj);
+
+/*
+ * Returns the type of the variable passed as a parameter
+ *
+ * @param { (Object | Array | String | Number | Boolean) } obj
+ */
+_.type = (variable) => type(variable);
+
+/*
+ * Returns a random number between the numbers passed as parameter
+ *
+ * @param { Number } min
+ * @param { Number } max
+ */
+_.rand = (min, max) => rand(min, max);
 
 export default _;

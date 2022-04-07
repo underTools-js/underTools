@@ -19,8 +19,9 @@
 ## Table of contents
 
 - [Start](#start)
-- [Methods](#functions)
-- [DOM](#dom)
+- [Methods](#methods)
+- [Selector](#selector)
+- [AJAX](#ajax)
 
 ## Start
 
@@ -91,16 +92,9 @@ underTools.randArray(array);
 
 ## Methods
 
-The `randArray()` function selects an element randomly from an array.
+You can use the methods of the `_` object.
 
-```js
-const array = [1, 2, 3, 4, 5];
-_.randArray(array);
-```
-
-In this example the `randArray()` function will return one of the elements of the array either 1, 2, 3, 4 or 5.
-
-Other methods :
+### Use
 
 - `_.id(x)`: Returns the value as a parameter.
 - `_.double(x)`: Returns the double of the value in parameter.
@@ -119,13 +113,35 @@ Other methods :
 - `_.join(arr, separator)`: Creates and returns a new character string by concatenating, with separator if is entered as a parameter, all the elements of an array or all the characters of a character string.
   - `arr`: String | Array
   - `separator`: String (initially '')
-- `_.inter(arr, ...array)`: Returns an array containing the common characters of character strings or the common elements of arrays passed as parameters
+- `_.inter(arr, ...array)`: Returns an array containing the common characters of character strings or the common elements of arrays passed as parameters.
   - `arr`, `...array`: String | Array
-- `_.scale(arr, min, max, int)`: 
+- `_.scale(arr, min, max, int)`: Returns an array containing the common characters of character strings or the common elements of arrays passed as parameters.
   - `arr`: Array[Number]
   - `min`: Number (initially 0)
   - `max`: Number (initially 1)
   - `int`: Boolean (initially true)
+- `_.randArray(arr)`: Returns an element randomly from an array.
+  - `arr`: Array
+- `_.rand(min, max)`: Returns a random number between the numbers passed as parameter.
+  - `min`: Number
+  - `max`: Number
+- `_.type(variable)`: Returns the type (array, object, string, integer, float, boolean) of a variable passed as a parameter.
+  - `variable`: All
+
+### Examples
+
+In this example the `randArray` method will return one of the elements of the array either 1, 2, 3, 4 or 5.
+
+```js
+const array = [1, 2, 3, 4, 5];
+_.randArray(array);
+```
+
+In this example the `rand` method returns a number between 1 and 10.
+
+```js
+_.rand(1, 10);
+```
 
 ## Selector
 
@@ -186,4 +202,39 @@ _("#root").dom(_("h1", "create").text("Hello world"));
 // or
 const h1 = _("h1").dom();
 _(h1).attr("id", "test");
+```
+
+## AJAX
+
+The `_.ajax(obj)` method allows you to simply perform an AJAX request.
+
+### Use
+
+The object passed as a parameter contains the following properties:
+- `request`: *Facultatif* **String** Allows forcing the use of XMLHttpRequest or fetch. Initially request is equal to auto ie the fetch function will be favored, however, if the fetch method is not compatible with the browser, the XMLHttpRequest method will be used.
+- `method`: *Facultatif* **String** GET or POST (initially GET).
+- `url`: **String** The request URL.
+- `data`: *Facultatif* The data you want to insert (only if the method is POST).
+- `format`: *Facultatif* **String** If the format is JSON the data returned or sent will be converted from JavaScript to JSON or from JSON to JavaScript depending on the request.
+- `headers`: *Facultatif* **Object** Allows performing various actions on HTTP request and response headers.
+- `mode`: *Facultatif* **String** Contains the mode of the request (e.g., cors, no-cors, cors-with-forced-preflight, same-origin, or navigate.) This is used to determine whether cross-origin requests will lead to valid responses, and what properties of the response will be readable.
+- `cache`: *Facultatif* **String** Contains the cache mode of the request. It controls how the request will interact with the browser's HTTP cache.
+- `response(res)`: **Function** The query response function.
+  - `res`: The result.
+- `error(err)`: *Facultatif* **Function** The query error function if the request fails.
+  - `err`: The error.
+
+### Examples
+
+```js
+_.ajax({
+  url: 'https://api.thecatapi.com/v1/images/search',
+  format: 'JSON',
+  response: (res) => {
+    console.log(res);
+  },
+  error: (err) => {
+    console.log(err);
+  },
+});
 ```
