@@ -70,4 +70,3 @@ _.randArray(array);
 ```js
 underTools.randArray(array);
 ```
-

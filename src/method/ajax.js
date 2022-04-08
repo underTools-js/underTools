@@ -43,11 +43,25 @@ const ajax = ({
   response,
   error,
 }) => {
+  const returnDatas = () => {
+    let ret;
+    if (method === 'POST' && data) {
+      if (format === 'JSON' || format === 'json') {
+        ret = JSON.stringify(data);
+      } else {
+        ret = data;
+      }
+    } else if (method === 'POST' && !data) {
+      ret = null;
+    }
+    return ret;
+  };
+
   const fetchRequest = () => {
     const init = {};
     method ? (init.method = method) : '';
-    headers ? (init.headers = headers) : '';
-    data ? (init.body = data) : '';
+    headers ? (init.headers = new Headers(headers)) : '';
+    data ? (init.body = returnDatas(data)) : '';
     mode ? (init.mode = mode) : '';
     cache ? (init.cache = cache) : '';
 
@@ -55,6 +69,20 @@ const ajax = ({
       .then((res) => {
         if (format === 'json' || format === 'JSON') {
           res.json().then((data) => {
+            response(data);
+          });
+        } else if (format === 'text') {
+          res.text().then((data) => {
+            response(data);
+          });
+        } else if (format === 'type') {
+          response(res.type);
+        } else if (format === 'url') {
+          res.blob().then((data) => {
+            response(URL.createObjectURL(data));
+          });
+        } else if (format === 'blob') {
+          res.blob().then((data) => {
             response(data);
           });
         } else {
@@ -74,6 +102,12 @@ const ajax = ({
       if (httpRequest.readyState === 4 && httpRequest.status === 200) {
         if (format === 'json' || format === 'JSON') {
           response(JSON.parse(httpRequest.response));
+        } else if (format === 'text') {
+          response(httpRequest.responseText);
+        } else if (format === 'type') {
+          response(httpRequest.responseType);
+        } else if (format === 'url') {
+          response(httpRequest.responseURL);
         } else {
           response(httpRequest.response);
         }
@@ -89,7 +123,7 @@ const ajax = ({
     for (const key in headers) {
       httpRequest.setRequestHeader(key, headers[key]);
     }
-    httpRequest.send(method === 'POST' ? data : null);
+    httpRequest.send(returnDatas(data));
   };
 
   if (request === 'auto') {

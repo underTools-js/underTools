@@ -220,9 +220,9 @@ The object passed as a parameter contains the following properties:
 - `mode`: *Facultatif* **String** Contains the mode of the request (e.g., cors, no-cors, cors-with-forced-preflight, same-origin, or navigate.) This is used to determine whether cross-origin requests will lead to valid responses, and what properties of the response will be readable.
 - `cache`: *Facultatif* **String** Contains the cache mode of the request. It controls how the request will interact with the browser's HTTP cache.
 - `response(res)`: **Function** The query response function.
-  - `res`: The result.
+  - `res`: The returned result.
 - `error(err)`: *Facultatif* **Function** The query error function if the request fails.
-  - `err`: The error.
+  - `err`: The returned error.
 
 ### Examples
 
