@@ -27,6 +27,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '1.2.0',
+              path: '1.2.0',
+            },
+          },
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/Skyleen77/underTools/tree/main/doc',
         },
@@ -56,6 +63,9 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'left',
+          },
+          {
+            type: 'docsVersionDropdown',
           },
           {
             href: 'https://github.com/Skyleen77/underTools',

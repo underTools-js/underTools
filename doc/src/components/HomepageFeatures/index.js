@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/easy.svg').default,
     description: (
       <>
         The library is simple to implement and use. underTools is distributed in 3 formats for all types of renderings: CommonJS, ES Modules and UMD
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Light and fast',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/fast.svg').default,
     description: (
       <>
         Designed to be able to develop in JavaScript more quickly, this library is very light.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Simple documentation',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/doc.svg').default,
     description: (
       <>
         Documentation is not always easy to understand.
