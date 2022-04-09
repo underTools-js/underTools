@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Documentation Introduction
+# Introduction
 
 Let's discover the **documentation of underTools**.
 

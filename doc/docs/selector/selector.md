@@ -16,3 +16,14 @@ _("#root").dom(_("h1", "create").text("Hello world"));
 const h1 = _("h1").dom();
 _(h1).attr("id", "test");
 ```
+
+## Details
+
+`_(element)` retourne un objet. Pour retourné l'élément du DOM sélectionné faites `_(element).dom()`.
+Pour utilisé des méthodes sur cette élément il faudra faire `_(element).method(args)`.
+
+:::caution
+
+Ne faite pas `_(element).dom().method(args)` car `_(element)` retourne un objet alors que `_(element).dom()` retourne un élément du DOM.
+
+:::
