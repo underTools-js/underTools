@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const currentVersion = '1.2.0';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -30,8 +31,8 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '1.2.0',
-              path: '1.2.0',
+              label: currentVersion,
+              path: currentVersion,
             },
           },
           sidebarPath: require.resolve('./sidebars.js'),
@@ -87,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
+                to: `/docs/${currentVersion}/intro`,
               },
             ],
           },
