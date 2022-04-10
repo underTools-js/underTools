@@ -11,13 +11,13 @@ Let's discover the **documentation of underTools**.
 ### 1. Installation with npm
 
 ```bash
-$ npm i undertools
+npm i undertools
 ```
 
 ### 2. Installation with yarn
 
 ```bash
-$ yarn add undertools
+yarn add undertools
 ```
 
 ### 2. Importation with CDN

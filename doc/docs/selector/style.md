@@ -15,14 +15,14 @@ _('#root').dom(_('div', 'create').style('background-color', '#000'));
 
 ## Details
 
-- `style()`: get all the element(s) style(s).
-- `style(property)` or `style().property`: get the value of the property entered as parameter of the element(s).
+- `_(element, action).style()`: get all the element(s) style(s).
+- `_(element, action).style(property)` or `_(element, action).style().property`: get the value of the property entered as parameter of the element(s).
 
 :::caution
 
-The property is written as in Javascript for `style().property` (example `style().backgroundColor`) and as in CSS for `style(property)` (example `style('background-color'`)).
+The property is written as in Javascript for `_(element, action).style().property` (example `_(element, action).style().backgroundColor`) and as in CSS for `_(element, action).style(property)` (example `_(element, action).style('background-color'`)).
 
 
 :::
 
-- `style(property, value)`: set to the element(s) the value to the property entered as parameter.
+- `_(element, action).style(property, value)`: set to the element(s) the value to the property entered as parameter.

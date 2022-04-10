@@ -19,11 +19,15 @@ _(h1).attr("id", "test");
 
 ## Details
 
-`_(element)` retourne un objet. Pour retourné l'élément du DOM sélectionné faites `_(element).dom()`.
-Pour utilisé des méthodes sur cette élément il faudra faire `_(element).method(args)`.
+- `_(element, action)`: returns an object.
+  - `element`: String
+  - `action`: String
+- `_(element, action).dom()`: returns the element(s).
+- `_(element, action).dom(element)`: replaces the element(s) with the element passed as a parameter.
+  - `element`: String
 
 :::caution
 
-Ne faite pas `_(element).dom().method(args)` car `_(element)` retourne un objet alors que `_(element).dom()` retourne un élément du DOM.
+Don't do `_(element, action).dom().method(args)` because `_(element, action)` returns an object while `_(element, action).dom()` returns an element of the DOM.
 
 :::

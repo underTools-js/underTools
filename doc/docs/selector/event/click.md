@@ -14,4 +14,4 @@ _(button).click();
 
 ## Details
 
-- `click()`: click on the element(s).
+- `_(element, action).click()`: click on the element(s).

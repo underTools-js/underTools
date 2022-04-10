@@ -188,6 +188,7 @@ _Facultatif_
 - `removeClass(name)`: remove the class entered as a parameter to the element(s)
 - `toggleClass(name)`: toggle the class entered as a parameter to the element(s)
 - `add(element)`: add an element in the element(s)
+- `remove()`: remove an element in the element(s)
 
 ### Examples
 
