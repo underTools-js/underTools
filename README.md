@@ -30,13 +30,13 @@
 #### NPM
 
 ```bash
-$ npm i undertools
+npm i undertools
 ```
 
 #### YARN
 
 ```bash
-$ yarn add undertools
+yarn add undertools
 ```
 
 #### CDN
