@@ -24,7 +24,7 @@ import uniq from './method/uniq.js';
 import join from './method/join.js';
 import inter from './method/inter.js';
 import scale from './method/scale.js';
-import ajax from './method/ajax.js';
+import ajax from './ajax/ajax.js';
 import type from './method/type.js';
 
 const _ = (element, action) => {

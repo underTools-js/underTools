@@ -36,7 +36,7 @@ const config = {
             },
           },
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/Skyleen77/underTools/tree/main/doc',
+          editUrl: 'https://github.com/Skyleen77/underTools/tree/dev/doc',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

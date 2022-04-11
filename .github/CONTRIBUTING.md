@@ -80,6 +80,8 @@ There are some other scripts available in the `scripts` section of the `package.
 
 - **`src`**:
 
+  - **`ajax`**: contains the ajax method.
+
   - **`method`**: contains all the methods of the undertools (`_`) library.
 
   - **`selector`**: contains all the methods of the `_()` selector.
