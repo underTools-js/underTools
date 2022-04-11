@@ -3,7 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const currentVersion = '1.2.0';
+const currentVersion = '1.2.5';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,24 +17,19 @@ const config = {
   organizationName: 'Skyleen77',
   projectName: 'underTools',
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: 'current',
-          versions: {
-            current: {
-              label: currentVersion,
-              path: currentVersion,
-            },
-          },
+          lastVersion: currentVersion,
+          // versions: {
+          //   current: {
+          //     label: currentVersion,
+          //     path: currentVersion,
+          //   },
+          // },
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/Skyleen77/underTools/tree/dev/doc',
         },
@@ -61,13 +56,9 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {
-            type: 'localeDropdown',
-            position: 'left',
-          },
-          {
-            type: 'docsVersionDropdown',
-          },
+          // {
+          //   type: 'docsVersionDropdown',
+          // },
           {
             href: 'https://github.com/Skyleen77/underTools',
             label: 'GitHub',
@@ -88,20 +79,21 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: `/docs/${currentVersion}/intro`,
+                // to: `/docs/${currentVersion}/intro`,
+                to: `/docs/intro`,
               },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Discord',
-                href: '#',
-              },
+              // {
+              //   label: 'Discord',
+              //   href: '#',
+              // },
               {
                 label: 'Twitter',
-                href: '#',
+                href: 'https://twitter.com/undetools',
               },
             ],
           },

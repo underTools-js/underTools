@@ -4,6 +4,8 @@
 
 ## To start run:
 
+Do not create a new version of the documentation, [update the existing version](https://docusaurus.io/docs/versioning#updating-an-existing-version).
+
 ```bash
 npm start
 ```
@@ -29,4 +31,10 @@ The example of your functionality
 
 ```bash
 npm run build
+```
+
+## To test the build locally run:
+
+```bash
+npm run serve
 ```
