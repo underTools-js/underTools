@@ -23,7 +23,7 @@ If yes, please describe the impact and migration path for existing applications:
 - [ ] When fixing a specific issue, it is referenced in the PR title (e.g. `fix #xxx[,#xxx]: bug`, where "xxx" is the issue number)
 - [ ] All tests pass: `npm test`
 - [ ] New/updated tests are included
-- [ ] The README.md is updated if a feature is changed, fixed or added
+- [ ] The the doc is updated if a feature is changed, fixed or added
 
 If adding a **new feature**, the PR's description includes:
 

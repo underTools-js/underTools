@@ -76,7 +76,9 @@ There are some other scripts available in the `scripts` section of the `package.
 
 - **`dist`**: contains built files for distribution. Note this directory is only updated when a release happens; they do not reflect the latest changes in development branches.
 
-- **`examples`**: contains some examples of use / allows to test its functionality _(not required to fill it in case of addition of functionality)_
+- **`doc`**: contains the documentation of the module.
+
+- **`examples`**: contains some examples of use / allows to test its functionality _(not required to fill it in case of addition of functionality)_.
 
 - **`src`**:
 

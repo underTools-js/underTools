@@ -1,6 +1,6 @@
 {
   "name": "undertools",
-  "version": "1.2.0",
+  "version": "1.2.5",
   "description": "underTools is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript.",
   "main": "dist/undertools.cjs.js",
   "module": "dist/undertools.esm.js",
