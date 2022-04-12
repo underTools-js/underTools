@@ -7,6 +7,8 @@
 Do not create a new version of the documentation, [update the existing version](https://docusaurus.io/docs/versioning#updating-an-existing-version).
 
 ```bash
+npm i
+
 npm start
 ```
 
