@@ -14,7 +14,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Skyleen77',
+  organizationName: 'underTools-js',
   projectName: 'underTools',
   deploymentBranch: 'doc',
 
@@ -32,7 +32,7 @@ const config = {
           //   },
           // },
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/Skyleen77/underTools/tree/dev/doc',
+          editUrl: 'https://github.com/underTools-js/underTools/tree/dev/doc',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -61,7 +61,7 @@ const config = {
           //   type: 'docsVersionDropdown',
           // },
           {
-            href: 'https://github.com/Skyleen77/underTools',
+            href: 'https://github.com/underTools-js/underTools',
             label: 'GitHub',
             position: 'right',
           },
@@ -103,7 +103,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Skyleen77/underTools',
+                href: 'https://github.com/underTools-js/underTools',
               },
               {
                 label: 'NPM',

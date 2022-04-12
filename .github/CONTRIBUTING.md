@@ -9,7 +9,7 @@ Hi! I'm really glad that you want to contribute to underTools. Before submitting
 
 ## Issue Reporting Guidelines
 
-- Always use [https://github.com/Skyleen77/underTools/issues](https://github.com/Skyleen77/underTools/issues) to create new issues.
+- Always use [https://github.com/underTools-js/underTools/issues](https://github.com/underTools-js/underTools/issues) to create new issues.
 
 ## Pull Request Guidelines
 
