@@ -48,7 +48,7 @@
   "bugs": {
     "url": "https://github.com/Skyleen77/underTools/issues"
   },
-  "homepage": "https://github.com/Skyleen77/underTools#readme",
+  "homepage": "https://undertoolsjs.com",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
