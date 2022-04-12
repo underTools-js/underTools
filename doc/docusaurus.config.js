@@ -9,8 +9,8 @@ const currentVersion = '1.2.5';
 const config = {
   title: 'underTools',
   tagline: 'Light, fast, and complete Javascript library',
-  url: 'https://github.com',
-  baseUrl: '/underTools/',
+  url: 'https://undertoolsjs.com',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
