@@ -16,6 +16,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'Skyleen77',
   projectName: 'underTools',
+  deploymentBranch: 'doc',
 
   presets: [
     [
