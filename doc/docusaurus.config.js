@@ -9,13 +9,14 @@ const currentVersion = '1.2.5';
 const config = {
   title: 'underTools',
   tagline: 'Light, fast, and complete Javascript library',
-  url: 'https://undertoolsjs.com',
-  baseUrl: '/',
+  url: 'https://github.com',
+  baseUrl: '/underTools/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'Skyleen77',
   projectName: 'underTools',
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
