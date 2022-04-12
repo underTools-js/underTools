@@ -47,7 +47,7 @@ const config = {
       navbar: {
         title: 'underTools',
         logo: {
-          alt: 'undeTools',
+          alt: 'underTools',
           src: 'img/undertools.png',
         },
         items: [
