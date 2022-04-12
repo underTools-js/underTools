@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://elliot-sutton.com/src/img/undertoolsLogo.png" alt="underTools Logo" width="100">
+    <img src="https://undertoolsjs.com/img/undertools.png" alt="underTools Logo" width="100">
   </a>
 </p>
 
