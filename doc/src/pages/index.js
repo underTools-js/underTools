@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -10,7 +9,7 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
 
   // console.log(siteConfig.presets[0][1].docs.versions.current.path)
-  const linkDowload = `https://unpkg.com/undertools@${siteConfig.presets[0][1].docs.lastVersion}/dist/undertools.js`;
+  const linkDowload = `./dist/undertools-${siteConfig.presets[0][1].docs.lastVersion}.js`;
   const linkName = `undertools-${siteConfig.presets[0][1].docs.lastVersion}.js`;
 
   return (
