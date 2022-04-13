@@ -9,8 +9,9 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
 
-  // const path = `/docs/${siteConfig.presets[0][1].docs.versions.current.path}/intro`;
-  const path = `/docs/intro`;
+  // console.log(siteConfig.presets[0][1].docs.versions.current.path)
+  const linkDowload = `https://unpkg.com/undertools@${siteConfig.presets[0][1].docs.lastVersion}/dist/undertools.js`;
+  const linkName = `undertools-${siteConfig.presets[0][1].docs.lastVersion}.js`;
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -18,12 +19,13 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
+          <a
             className="button button--secondary button--lg"
-            to={path}
+            href={linkDowload}
+            download={linkName}
           >
-            Documentation
-          </Link>
+            Télécharger la dernière version
+          </a>
         </div>
       </div>
     </header>
