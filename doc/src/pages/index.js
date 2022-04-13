@@ -23,7 +23,7 @@ function HomepageHeader() {
             href={linkDowload}
             download={linkName}
           >
-            Télécharger la dernière version
+            Download the latest version
           </a>
         </div>
       </div>
