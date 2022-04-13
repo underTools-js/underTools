@@ -32,10 +32,7 @@ function HomepageHeader() {
 
 export default function Home() {
   return (
-    <Layout
-      title="Home"
-      description="underTools facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript."
-    >
+    <Layout>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

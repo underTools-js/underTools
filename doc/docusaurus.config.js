@@ -114,6 +114,16 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()}, underTools.`,
       },
+      metadata: [
+        {
+          name: 'description',
+          content: 'underTools facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript.'
+        },
+        {
+          name: 'author',
+          content: 'Elliot Sutton a.k.a Skyleen'
+        }
+      ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
