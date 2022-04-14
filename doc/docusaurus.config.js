@@ -3,7 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const currentVersion = '1.2.0';
+const currentVersion = '1.2.5';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,13 +14,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'Skyleen77',
+  organizationName: 'underTools-js',
   projectName: 'underTools',
-
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
+  deploymentBranch: 'doc',
 
   presets: [
     [
@@ -28,15 +24,15 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: 'current',
-          versions: {
-            current: {
-              label: currentVersion,
-              path: currentVersion,
-            },
-          },
+          lastVersion: currentVersion,
+          // versions: {
+          //   current: {
+          //     label: currentVersion,
+          //     path: currentVersion,
+          //   },
+          // },
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/Skyleen77/underTools/tree/main/doc',
+          editUrl: 'https://github.com/underTools-js/underTools/tree/dev/doc',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,7 +47,7 @@ const config = {
       navbar: {
         title: 'underTools',
         logo: {
-          alt: 'undeTools',
+          alt: 'underTools',
           src: 'img/undertools.png',
         },
         items: [
@@ -61,15 +57,11 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+          // {
+          //   type: 'docsVersionDropdown',
+          // },
           {
-            type: 'localeDropdown',
-            position: 'left',
-          },
-          {
-            type: 'docsVersionDropdown',
-          },
-          {
-            href: 'https://github.com/Skyleen77/underTools',
+            href: 'https://github.com/underTools-js/underTools',
             label: 'GitHub',
             position: 'right',
           },
@@ -88,20 +80,21 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: `/docs/${currentVersion}/intro`,
+                // to: `/docs/${currentVersion}/intro`,
+                to: `/docs/intro`,
               },
             ],
           },
           {
             title: 'Community',
             items: [
-              {
-                label: 'Discord',
-                href: '#',
-              },
+              // {
+              //   label: 'Discord',
+              //   href: '#',
+              // },
               {
                 label: 'Twitter',
-                href: '#',
+                href: 'https://twitter.com/undetools',
               },
             ],
           },
@@ -110,7 +103,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/Skyleen77/underTools',
+                href: 'https://github.com/underTools-js/underTools',
               },
               {
                 label: 'NPM',
@@ -121,6 +114,16 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()}, underTools.`,
       },
+      metadata: [
+        {
+          name: 'description',
+          content: 'underTools facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript.'
+        },
+        {
+          name: 'author',
+          content: 'Elliot Sutton a.k.a Skyleen'
+        }
+      ],
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

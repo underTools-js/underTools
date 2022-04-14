@@ -4,6 +4,7 @@ import { terser } from 'rollup-plugin-terser';
 
 const dist = 'dist';
 const bundle = 'undertools';
+const version = '1.2.5';
 
 const prod = !process.env.ROLLUP_WATCH;
 
@@ -27,6 +28,14 @@ export default {
     {
       name: 'underTools',
       file: `${dist}/${bundle}.js`,
+      format: 'umd',
+      plugins: [
+        prod && terser(),
+      ],
+    },
+    {
+      name: 'underTools',
+      file: `doc/static/${dist}/${bundle}-${version}.js`,
       format: 'umd',
       plugins: [
         prod && terser(),

@@ -1,6 +1,6 @@
 {
   "name": "undertools",
-  "version": "1.2.0",
+  "version": "1.2.5",
   "description": "underTools is a light, fast, and complete Javascript library. It facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript.",
   "main": "dist/undertools.cjs.js",
   "module": "dist/undertools.esm.js",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Skyleen77/underTools.git"
+    "url": "git+https://github.com/underTools-js/underTools.git"
   },
   "keywords": [
     "javascript",
@@ -46,9 +46,9 @@
   "author": "Elliot Sutton a.k.a Skyleen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Skyleen77/underTools/issues"
+    "url": "https://github.com/underTools-js/underTools/issues"
   },
-  "homepage": "https://github.com/Skyleen77/underTools#readme",
+  "homepage": "https://undertoolsjs.com",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
@@ -62,6 +62,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^26.1.3",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.7",

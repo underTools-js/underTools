@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -9,7 +8,9 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
 
-  const path = `/docs/${siteConfig.presets[0][1].docs.versions.current.path}/intro`;
+  // console.log(siteConfig.presets[0][1].docs.versions.current.path)
+  const linkDowload = `./dist/undertools-${siteConfig.presets[0][1].docs.lastVersion}.js`;
+  const linkName = `undertools-${siteConfig.presets[0][1].docs.lastVersion}.js`;
 
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
@@ -17,12 +18,13 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
+          <a
             className="button button--secondary button--lg"
-            to={path}
+            href={linkDowload}
+            download={linkName}
           >
-            Documentation
-          </Link>
+            Download the latest version
+          </a>
         </div>
       </div>
     </header>
@@ -31,10 +33,7 @@ function HomepageHeader() {
 
 export default function Home() {
   return (
-    <Layout
-      title="Home"
-      description="underTools facilitates the manipulation of the DOM, the events, the API calls and adds interesting functions, not present in the native Javascript."
-    >
+    <Layout>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

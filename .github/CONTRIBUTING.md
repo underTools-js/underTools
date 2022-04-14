@@ -9,7 +9,7 @@ Hi! I'm really glad that you want to contribute to underTools. Before submitting
 
 ## Issue Reporting Guidelines
 
-- Always use [https://github.com/Skyleen77/underTools/issues](https://github.com/Skyleen77/underTools/issues) to create new issues.
+- Always use [https://github.com/underTools-js/underTools/issues](https://github.com/underTools-js/underTools/issues) to create new issues.
 
 ## Pull Request Guidelines
 
@@ -76,9 +76,13 @@ There are some other scripts available in the `scripts` section of the `package.
 
 - **`dist`**: contains built files for distribution. Note this directory is only updated when a release happens; they do not reflect the latest changes in development branches.
 
-- **`examples`**: contains some examples of use / allows to test its functionality _(not required to fill it in case of addition of functionality)_
+- **`doc`**: contains the documentation of the module.
+
+- **`examples`**: contains some examples of use / allows to test its functionality _(not required to fill it in case of addition of functionality)_.
 
 - **`src`**:
+
+  - **`ajax`**: contains the ajax method.
 
   - **`method`**: contains all the methods of the undertools (`_`) library.
 
