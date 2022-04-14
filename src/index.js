@@ -26,6 +26,7 @@ import inter from './method/inter.js';
 import scale from './method/scale.js';
 import ajax from './ajax/ajax.js';
 import type from './method/type.js';
+import url from './method/url.js';
 
 const _ = (element, action) => {
   const self = {
@@ -263,5 +264,12 @@ _.type = (variable) => type(variable);
  * @param { Number } max
  */
 _.rand = (min, max) => rand(min, max);
+
+/*
+ * Allows you to manipulate the url
+ *
+ * @param { String } link
+ */
+_.url = (link) => url(link);
 
 export default _;
